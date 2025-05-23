@@ -30,7 +30,7 @@ def index_view():
     )
 
 
-# @blueprint.route('/chains')
+@blueprint.route('/chains')
 def chains_view():
     try:
         chains_page = ChainDAO.chains().paginate()
